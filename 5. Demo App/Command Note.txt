@@ -1,0 +1,18 @@
+conda create -n rtfer_demo python=3.11
+
+> conda activate rtfer_demo
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+pip install ultralytics opencv-python transformers
+
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
+python -c "from transformers import ViTModel; print('Transformers installed')"
+python -c "from ultralytics import YOLO; print('Ultralytics installed')"
+
+> python "D:\College\Semester 8\Skripsi\Program\5. Demo App\demo_app_ds.py" --device cpu
+python "D:\College\Semester 8\Skripsi\Program\5. Demo App\demo_app_ds.py" --device cuda
+
+> python "D:\College\Semester 8\Skripsi\Program\5. Demo App\demo_app_ss.py" --device cpu
+python "D:\College\Semester 8\Skripsi\Program\5. Demo App\demo_app_ss.py" --device cuda
+
+> conda deactivate

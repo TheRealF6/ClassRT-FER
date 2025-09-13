@@ -1,0 +1,774 @@
+
+(base) C:\Users\ASUS>conda create -n vitfer_cpu python=3.11
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: a
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/r? [(a)ccept/(r)eject/(v)iew]: a
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/msys2? [(a)ccept/(r)eject/(v)iew]: a
+3 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\ASUS\miniconda3\envs\vitfer_cpu
+
+  added / updated specs:
+    - python=3.11
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bzip2-1.0.8                |       h2bbff1b_6          90 KB
+    ca-certificates-2025.2.25  |       haa95532_0         130 KB
+    expat-2.7.1                |       h8ddb27b_0         259 KB
+    libffi-3.4.4               |       hd77b12b_1         122 KB
+    openssl-3.0.16             |       h3f729d1_0         7.8 MB
+    pip-25.1                   |     pyhc872135_2         1.3 MB
+    python-3.11.13             |       h981015d_0        18.7 MB
+    setuptools-78.1.1          |  py311haa95532_0         2.3 MB
+    sqlite-3.50.2              |       hda9a48d_1        1017 KB
+    tk-8.6.14                  |       h5e9d12e_1         3.5 MB
+    tzdata-2025b               |       h04d1e81_0         116 KB
+    ucrt-10.0.22621.0          |       haa95532_0         620 KB
+    vc-14.3                    |      h2df5915_10          19 KB
+    vc14_runtime-14.44.35208   |      h4927774_10         825 KB
+    vs2015_runtime-14.44.35208 |      ha6b5a95_10          19 KB
+    wheel-0.45.1               |  py311haa95532_0         182 KB
+    xz-5.6.4                   |       h4754444_1         280 KB
+    zlib-1.2.13                |       h8cc25b3_1         131 KB
+    ------------------------------------------------------------
+                                           Total:        37.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-h2bbff1b_6
+  ca-certificates    pkgs/main/win-64::ca-certificates-2025.2.25-haa95532_0
+  expat              pkgs/main/win-64::expat-2.7.1-h8ddb27b_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  openssl            pkgs/main/win-64::openssl-3.0.16-h3f729d1_0
+  pip                pkgs/main/noarch::pip-25.1-pyhc872135_2
+  python             pkgs/main/win-64::python-3.11.13-h981015d_0
+  setuptools         pkgs/main/win-64::setuptools-78.1.1-py311haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.50.2-hda9a48d_1
+  tk                 pkgs/main/win-64::tk-8.6.14-h5e9d12e_1
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0
+  ucrt               pkgs/main/win-64::ucrt-10.0.22621.0-haa95532_0
+  vc                 pkgs/main/win-64::vc-14.3-h2df5915_10
+  vc14_runtime       pkgs/main/win-64::vc14_runtime-14.44.35208-h4927774_10
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.44.35208-ha6b5a95_10
+  wheel              pkgs/main/win-64::wheel-0.45.1-py311haa95532_0
+  xz                 pkgs/main/win-64::xz-5.6.4-h4754444_1
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate vitfer_cpu
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\ASUS>conda activate vitfer_cpu
+
+(vitfer_cpu) C:\Users\ASUS>conda install pytorch torchvision cpuonly -c pytorch
+3 channel Terms of Service accepted
+Channels:
+ - pytorch
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\ASUS\miniconda3\envs\vitfer_cpu
+
+  added / updated specs:
+    - cpuonly
+    - pytorch
+    - torchvision
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |              mkl           6 KB
+    brotlicffi-1.0.9.2         |  py311h5da7b33_1         359 KB
+    certifi-2025.7.14          |  py311haa95532_0         162 KB
+    cffi-1.17.1                |  py311h827c3e9_1         315 KB
+    charset-normalizer-3.3.2   |     pyhd3eb1b0_0          44 KB
+    cpuonly-2.0                |                0           2 KB  pytorch
+    filelock-3.17.0            |  py311haa95532_0          38 KB
+    freetype-2.13.3            |       h0620614_0         554 KB
+    giflib-5.2.2               |       h7edc060_0         105 KB
+    gmp-6.3.0                  |       h537511b_0         330 KB
+    gmpy2-2.2.1                |  py311h827c3e9_0         205 KB
+    idna-3.7                   |  py311haa95532_0         133 KB
+    intel-openmp-2023.1.0      |   h59b6b97_46320         2.7 MB
+    jinja2-3.1.6               |  py311haa95532_0         359 KB
+    jpeg-9e                    |       h827c3e9_3         334 KB
+    lcms2-2.16                 |       hb4a4139_0         566 KB
+    lerc-3.0                   |       hd77b12b_0         120 KB
+    libdeflate-1.17            |       h2bbff1b_1         153 KB
+    libjpeg-turbo-2.0.0        |       h196d8e1_0         618 KB
+    libpng-1.6.39              |       h8cc25b3_0         369 KB
+    libtiff-4.5.1              |       hd77b12b_0         1.1 MB
+    libuv-1.48.0               |       h827c3e9_0         322 KB
+    libwebp-1.3.2              |       hbc33d0d_0          73 KB
+    libwebp-base-1.3.2         |       h3d04722_1         303 KB
+    lz4-c-1.9.4                |       h2bbff1b_1         152 KB
+    markupsafe-3.0.2           |  py311h827c3e9_0          39 KB
+    mkl-2023.1.0               |   h6b88ed4_46358       155.9 MB
+    mkl-service-2.4.0          |  py311h827c3e9_2          67 KB
+    mkl_fft-1.3.11             |  py311h827c3e9_0         176 KB
+    mkl_random-1.2.8           |  py311hea22821_0         266 KB
+    mpc-1.3.1                  |       h827c3e9_0          85 KB
+    mpfr-4.2.1                 |       h56c3642_0         266 KB
+    mpmath-1.3.0               |  py311haa95532_0         1.0 MB
+    networkx-3.4.2             |  py311haa95532_0         3.1 MB
+    numpy-2.0.1                |  py311hdab7c0b_1          11 KB
+    numpy-base-2.0.1           |  py311hd01c5d8_1         9.6 MB
+    openjpeg-2.5.2             |       hae555c5_0         268 KB
+    pillow-11.1.0              |  py311h096bfcc_0         927 KB
+    pycparser-2.21             |     pyhd3eb1b0_0          94 KB
+    pysocks-1.7.1              |  py311haa95532_0          36 KB
+    pytorch-2.5.1              |     py3.11_cpu_0       151.3 MB  pytorch
+    pytorch-mutex-1.0          |              cpu           3 KB  pytorch
+    pyyaml-6.0.2               |  py311h827c3e9_0         205 KB
+    requests-2.32.4            |  py311haa95532_0         179 KB
+    sympy-1.13.3               |  py311haa95532_1        15.5 MB
+    tbb-2021.8.0               |       h59b6b97_0         149 KB
+    torchvision-0.20.1         |        py311_cpu         6.8 MB  pytorch
+    typing_extensions-4.12.2   |  py311haa95532_0          82 KB
+    urllib3-2.5.0              |  py311haa95532_0         361 KB
+    win_inet_pton-1.1.0        |  py311haa95532_0          10 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zstd-1.5.6                 |       h8880b57_0         708 KB
+    ------------------------------------------------------------
+                                           Total:       356.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  brotlicffi         pkgs/main/win-64::brotlicffi-1.0.9.2-py311h5da7b33_1
+  certifi            pkgs/main/win-64::certifi-2025.7.14-py311haa95532_0
+  cffi               pkgs/main/win-64::cffi-1.17.1-py311h827c3e9_1
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  cpuonly            pytorch/noarch::cpuonly-2.0-0
+  filelock           pkgs/main/win-64::filelock-3.17.0-py311haa95532_0
+  freetype           pkgs/main/win-64::freetype-2.13.3-h0620614_0
+  giflib             pkgs/main/win-64::giflib-5.2.2-h7edc060_0
+  gmp                pkgs/main/win-64::gmp-6.3.0-h537511b_0
+  gmpy2              pkgs/main/win-64::gmpy2-2.2.1-py311h827c3e9_0
+  idna               pkgs/main/win-64::idna-3.7-py311haa95532_0
+  intel-openmp       pkgs/main/win-64::intel-openmp-2023.1.0-h59b6b97_46320
+  jinja2             pkgs/main/win-64::jinja2-3.1.6-py311haa95532_0
+  jpeg               pkgs/main/win-64::jpeg-9e-h827c3e9_3
+  lcms2              pkgs/main/win-64::lcms2-2.16-hb4a4139_0
+  lerc               pkgs/main/win-64::lerc-3.0-hd77b12b_0
+  libdeflate         pkgs/main/win-64::libdeflate-1.17-h2bbff1b_1
+  libjpeg-turbo      pkgs/main/win-64::libjpeg-turbo-2.0.0-h196d8e1_0
+  libpng             pkgs/main/win-64::libpng-1.6.39-h8cc25b3_0
+  libtiff            pkgs/main/win-64::libtiff-4.5.1-hd77b12b_0
+  libuv              pkgs/main/win-64::libuv-1.48.0-h827c3e9_0
+  libwebp            pkgs/main/win-64::libwebp-1.3.2-hbc33d0d_0
+  libwebp-base       pkgs/main/win-64::libwebp-base-1.3.2-h3d04722_1
+  lz4-c              pkgs/main/win-64::lz4-c-1.9.4-h2bbff1b_1
+  markupsafe         pkgs/main/win-64::markupsafe-3.0.2-py311h827c3e9_0
+  mkl                pkgs/main/win-64::mkl-2023.1.0-h6b88ed4_46358
+  mkl-service        pkgs/main/win-64::mkl-service-2.4.0-py311h827c3e9_2
+  mkl_fft            pkgs/main/win-64::mkl_fft-1.3.11-py311h827c3e9_0
+  mkl_random         pkgs/main/win-64::mkl_random-1.2.8-py311hea22821_0
+  mpc                pkgs/main/win-64::mpc-1.3.1-h827c3e9_0
+  mpfr               pkgs/main/win-64::mpfr-4.2.1-h56c3642_0
+  mpmath             pkgs/main/win-64::mpmath-1.3.0-py311haa95532_0
+  networkx           pkgs/main/win-64::networkx-3.4.2-py311haa95532_0
+  numpy              pkgs/main/win-64::numpy-2.0.1-py311hdab7c0b_1
+  numpy-base         pkgs/main/win-64::numpy-base-2.0.1-py311hd01c5d8_1
+  openjpeg           pkgs/main/win-64::openjpeg-2.5.2-hae555c5_0
+  pillow             pkgs/main/win-64::pillow-11.1.0-py311h096bfcc_0
+  pycparser          pkgs/main/noarch::pycparser-2.21-pyhd3eb1b0_0
+  pysocks            pkgs/main/win-64::pysocks-1.7.1-py311haa95532_0
+  pytorch            pytorch/win-64::pytorch-2.5.1-py3.11_cpu_0
+  pytorch-mutex      pytorch/noarch::pytorch-mutex-1.0-cpu
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.2-py311h827c3e9_0
+  requests           pkgs/main/win-64::requests-2.32.4-py311haa95532_0
+  sympy              pkgs/main/win-64::sympy-1.13.3-py311haa95532_1
+  tbb                pkgs/main/win-64::tbb-2021.8.0-h59b6b97_0
+  torchvision        pytorch/win-64::torchvision-0.20.1-py311_cpu
+  typing_extensions  pkgs/main/win-64::typing_extensions-4.12.2-py311haa95532_0
+  urllib3            pkgs/main/win-64::urllib3-2.5.0-py311haa95532_0
+  win_inet_pton      pkgs/main/win-64::win_inet_pton-1.1.0-py311haa95532_0
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zstd               pkgs/main/win-64::zstd-1.5.6-h8880b57_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(vitfer_cpu) C:\Users\ASUS>conda install opencv pandas numpy matplotlib
+3 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\ASUS\miniconda3\envs\vitfer_cpu
+
+  added / updated specs:
+    - matplotlib
+    - numpy
+    - opencv
+    - pandas
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    aom-3.6.0                  |       hd77b12b_0         9.1 MB
+    bottleneck-1.4.2           |  py311h57dcf0c_0         146 KB
+    brotli-python-1.0.9        |  py311h5da7b33_9         346 KB
+    cairo-1.16.0               |       h85cdd14_6         1.9 MB
+    contourpy-1.3.1            |  py311h214f63a_0         232 KB
+    cycler-0.11.0              |     pyhd3eb1b0_0          12 KB
+    dav1d-1.2.1                |       h2bbff1b_0         672 KB
+    eigen-3.4.0                |       h59b6b97_0         1.1 MB
+    fontconfig-2.14.1          |       hb33846d_3         224 KB
+    fonttools-4.55.3           |  py311h827c3e9_0         2.7 MB
+    freeglut-3.4.0             |       h8a1e904_1         134 KB
+    fribidi-1.0.10             |       h62dcd97_0          63 KB
+    graphite2-1.3.14           |       hd77b12b_1          91 KB
+    gst-plugins-base-1.24.12   |       h91a6125_1         2.0 MB
+    gstreamer-1.24.12          |       hfb93a4f_1         1.7 MB
+    gstreamer-orc-0.4.41       |       ha00e802_0         190 KB
+    harfbuzz-10.2.0            |       he2f9f60_1         1.2 MB
+    hdf5-1.14.5                |       ha36df97_2         2.1 MB
+    icc_rt-2022.1.0            |       h6049295_2         6.5 MB
+    icu-73.1                   |       h6c2663c_0        29.5 MB
+    kiwisolver-1.4.8           |  py311h5da7b33_0          63 KB
+    krb5-1.21.3                |       he4457a5_1         834 KB
+    lcms2-2.16                 |       h62be587_1         568 KB
+    lerc-4.0.0                 |       h5da7b33_0         185 KB
+    libabseil-20250127.0       | cxx17_h52369b4_0         1.9 MB
+    libavif-1.1.1              |       h827c3e9_0         1.9 MB
+    libdeflate-1.22            |       h5bf469e_0         180 KB
+    libglib-2.84.2             |       h405b238_0         1.6 MB
+    libiconv-1.16              |       h2bbff1b_3         685 KB
+    libpq-17.4                 |       h4a159e6_1         4.2 MB
+    libprotobuf-5.29.3         |       h65a231f_1         7.5 MB
+    libtiff-4.7.0              |       h404307b_0         1.1 MB
+    libwebp-1.3.2              |       h18467be_1          83 KB
+    libxml2-2.13.8             |       h866ff63_0         2.8 MB
+    matplotlib-3.10.0          |  py311haa95532_0           8 KB
+    matplotlib-base-3.10.0     |  py311he19b0ae_0        10.1 MB
+    numexpr-2.11.0             |  py311hdb065b2_0         212 KB
+    numpy-2.3.1                |  py311h5f75535_0          12 KB
+    numpy-base-2.3.1           |  py311h23d94f8_0         9.8 MB
+    opencv-4.10.0              |  py311h6cb580c_6        35.5 MB
+    openjpeg-2.5.2             |       h9b5d1b5_1         268 KB
+    packaging-24.2             |  py311haa95532_0         200 KB
+    pandas-2.2.3               |  py311h5da7b33_0        14.7 MB
+    pcre2-10.42                |       h0ff8eda_1         728 KB
+    pillow-11.3.0              |  py311hb328d1f_0         947 KB
+    pixman-0.40.0              |       h2bbff1b_1         402 KB
+    pyparsing-3.2.0            |  py311haa95532_0         480 KB
+    pyqt-6.7.1                 |  py311h5da7b33_1         3.5 MB
+    pyqt6-sip-13.9.1           |  py311h827c3e9_1          77 KB
+    python-dateutil-2.9.0post0 |  py311haa95532_2         324 KB
+    python-tzdata-2025.2       |     pyhd3eb1b0_0         141 KB
+    pytz-2025.2                |  py311haa95532_0         235 KB
+    qtbase-6.7.3               |       hd088775_2        18.4 MB
+    qtdeclarative-6.7.3        |       h885b0b7_1        21.0 MB
+    qtsvg-6.7.3                |       h9d4b640_1         318 KB
+    qttools-6.7.3              |       hcb596f7_1         9.6 MB
+    qtwebchannel-6.7.3         |       h885b0b7_1         163 KB
+    qtwebsockets-6.7.3         |       h885b0b7_1         147 KB
+    setuptools-72.1.0          |  py311haa95532_0         3.0 MB
+    sip-6.10.0                 |  py311h5da7b33_0         718 KB
+    six-1.17.0                 |  py311haa95532_0          38 KB
+    tornado-6.5.1              |  py311h827c3e9_0         896 KB
+    unicodedata2-15.1.0        |  py311h827c3e9_1         525 KB
+    vc-14.42                   |       haa95532_5          11 KB
+    ------------------------------------------------------------
+                                           Total:       216.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  aom                pkgs/main/win-64::aom-3.6.0-hd77b12b_0
+  bottleneck         pkgs/main/win-64::bottleneck-1.4.2-py311h57dcf0c_0
+  brotli-python      pkgs/main/win-64::brotli-python-1.0.9-py311h5da7b33_9
+  cairo              pkgs/main/win-64::cairo-1.16.0-h85cdd14_6
+  contourpy          pkgs/main/win-64::contourpy-1.3.1-py311h214f63a_0
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  dav1d              pkgs/main/win-64::dav1d-1.2.1-h2bbff1b_0
+  eigen              pkgs/main/win-64::eigen-3.4.0-h59b6b97_0
+  fontconfig         pkgs/main/win-64::fontconfig-2.14.1-hb33846d_3
+  fonttools          pkgs/main/win-64::fonttools-4.55.3-py311h827c3e9_0
+  freeglut           pkgs/main/win-64::freeglut-3.4.0-h8a1e904_1
+  fribidi            pkgs/main/win-64::fribidi-1.0.10-h62dcd97_0
+  graphite2          pkgs/main/win-64::graphite2-1.3.14-hd77b12b_1
+  gst-plugins-base   pkgs/main/win-64::gst-plugins-base-1.24.12-h91a6125_1
+  gstreamer          pkgs/main/win-64::gstreamer-1.24.12-hfb93a4f_1
+  gstreamer-orc      pkgs/main/win-64::gstreamer-orc-0.4.41-ha00e802_0
+  harfbuzz           pkgs/main/win-64::harfbuzz-10.2.0-he2f9f60_1
+  hdf5               pkgs/main/win-64::hdf5-1.14.5-ha36df97_2
+  icc_rt             pkgs/main/win-64::icc_rt-2022.1.0-h6049295_2
+  icu                pkgs/main/win-64::icu-73.1-h6c2663c_0
+  kiwisolver         pkgs/main/win-64::kiwisolver-1.4.8-py311h5da7b33_0
+  krb5               pkgs/main/win-64::krb5-1.21.3-he4457a5_1
+  libabseil          pkgs/main/win-64::libabseil-20250127.0-cxx17_h52369b4_0
+  libavif            pkgs/main/win-64::libavif-1.1.1-h827c3e9_0
+  libglib            pkgs/main/win-64::libglib-2.84.2-h405b238_0
+  libiconv           pkgs/main/win-64::libiconv-1.16-h2bbff1b_3
+  libpq              pkgs/main/win-64::libpq-17.4-h4a159e6_1
+  libprotobuf        pkgs/main/win-64::libprotobuf-5.29.3-h65a231f_1
+  libxml2            pkgs/main/win-64::libxml2-2.13.8-h866ff63_0
+  matplotlib         pkgs/main/win-64::matplotlib-3.10.0-py311haa95532_0
+  matplotlib-base    pkgs/main/win-64::matplotlib-base-3.10.0-py311he19b0ae_0
+  numexpr            pkgs/main/win-64::numexpr-2.11.0-py311hdb065b2_0
+  opencv             pkgs/main/win-64::opencv-4.10.0-py311h6cb580c_6
+  packaging          pkgs/main/win-64::packaging-24.2-py311haa95532_0
+  pandas             pkgs/main/win-64::pandas-2.2.3-py311h5da7b33_0
+  pcre2              pkgs/main/win-64::pcre2-10.42-h0ff8eda_1
+  pixman             pkgs/main/win-64::pixman-0.40.0-h2bbff1b_1
+  pyparsing          pkgs/main/win-64::pyparsing-3.2.0-py311haa95532_0
+  pyqt               pkgs/main/win-64::pyqt-6.7.1-py311h5da7b33_1
+  pyqt6-sip          pkgs/main/win-64::pyqt6-sip-13.9.1-py311h827c3e9_1
+  python-dateutil    pkgs/main/win-64::python-dateutil-2.9.0post0-py311haa95532_2
+  python-tzdata      pkgs/main/noarch::python-tzdata-2025.2-pyhd3eb1b0_0
+  pytz               pkgs/main/win-64::pytz-2025.2-py311haa95532_0
+  qtbase             pkgs/main/win-64::qtbase-6.7.3-hd088775_2
+  qtdeclarative      pkgs/main/win-64::qtdeclarative-6.7.3-h885b0b7_1
+  qtsvg              pkgs/main/win-64::qtsvg-6.7.3-h9d4b640_1
+  qttools            pkgs/main/win-64::qttools-6.7.3-hcb596f7_1
+  qtwebchannel       pkgs/main/win-64::qtwebchannel-6.7.3-h885b0b7_1
+  qtwebsockets       pkgs/main/win-64::qtwebsockets-6.7.3-h885b0b7_1
+  sip                pkgs/main/win-64::sip-6.10.0-py311h5da7b33_0
+  six                pkgs/main/win-64::six-1.17.0-py311haa95532_0
+  tornado            pkgs/main/win-64::tornado-6.5.1-py311h827c3e9_0
+  unicodedata2       pkgs/main/win-64::unicodedata2-15.1.0-py311h827c3e9_1
+
+The following packages will be UPDATED:
+
+  lcms2                                     2.16-hb4a4139_0 --> 2.16-h62be587_1
+  lerc                                       3.0-hd77b12b_0 --> 4.0.0-h5da7b33_0
+  libdeflate                                1.17-h2bbff1b_1 --> 1.22-h5bf469e_0
+  libtiff                                  4.5.1-hd77b12b_0 --> 4.7.0-h404307b_0
+  libwebp                                  1.3.2-hbc33d0d_0 --> 1.3.2-h18467be_1
+  numpy                               2.0.1-py311hdab7c0b_1 --> 2.3.1-py311h5f75535_0
+  numpy-base                          2.0.1-py311hd01c5d8_1 --> 2.3.1-py311h23d94f8_0
+  openjpeg                                 2.5.2-hae555c5_0 --> 2.5.2-h9b5d1b5_1
+  pillow                             11.1.0-py311h096bfcc_0 --> 11.3.0-py311hb328d1f_0
+  vc                                       14.3-h2df5915_10 --> 14.42-haa95532_5
+
+The following packages will be DOWNGRADED:
+
+  setuptools                         78.1.1-py311haa95532_0 --> 72.1.0-py311haa95532_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(vitfer_cpu) C:\Users\ASUS>pip install transformers ultralytics scikit-learn albumentations
+Collecting transformers
+  Downloading transformers-4.53.2-py3-none-any.whl.metadata (40 kB)
+Collecting ultralytics
+  Downloading ultralytics-8.3.168-py3-none-any.whl.metadata (37 kB)
+Collecting scikit-learn
+  Downloading scikit_learn-1.7.1-cp311-cp311-win_amd64.whl.metadata (11 kB)
+Collecting albumentations
+  Downloading albumentations-2.0.8-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: filelock in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from transformers) (3.17.0)
+Collecting huggingface-hub<1.0,>=0.30.0 (from transformers)
+  Downloading huggingface_hub-0.33.4-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from transformers) (2.3.1)
+Requirement already satisfied: packaging>=20.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from transformers) (24.2)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from transformers) (6.0.2)
+Collecting regex!=2019.12.17 (from transformers)
+  Downloading regex-2024.11.6-cp311-cp311-win_amd64.whl.metadata (41 kB)
+Requirement already satisfied: requests in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from transformers) (2.32.4)
+Collecting tokenizers<0.22,>=0.21 (from transformers)
+  Downloading tokenizers-0.21.2-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+Collecting safetensors>=0.4.3 (from transformers)
+  Downloading safetensors-0.5.3-cp38-abi3-win_amd64.whl.metadata (3.9 kB)
+Collecting tqdm>=4.27 (from transformers)
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<1.0,>=0.30.0->transformers)
+  Downloading fsspec-2025.7.0-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from huggingface-hub<1.0,>=0.30.0->transformers) (4.12.2)
+Requirement already satisfied: matplotlib>=3.3.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (3.10.0)
+Requirement already satisfied: opencv-python>=4.6.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (4.10.0)
+Requirement already satisfied: pillow>=7.1.2 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (11.3.0)
+Collecting scipy>=1.4.1 (from ultralytics)
+  Downloading scipy-1.16.0-cp311-cp311-win_amd64.whl.metadata (60 kB)
+Requirement already satisfied: torch>=1.8.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (2.5.1)
+Requirement already satisfied: torchvision>=0.9.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (0.20.1)
+Collecting psutil (from ultralytics)
+  Downloading psutil-7.0.0-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting py-cpuinfo (from ultralytics)
+  Downloading py_cpuinfo-9.0.0-py3-none-any.whl.metadata (794 bytes)
+Requirement already satisfied: pandas>=1.1.4 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ultralytics) (2.2.3)
+Collecting ultralytics-thop>=2.0.0 (from ultralytics)
+  Downloading ultralytics_thop-2.0.14-py3-none-any.whl.metadata (9.4 kB)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Downloading joblib-1.5.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting pydantic>=2.9.2 (from albumentations)
+  Downloading pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+Collecting albucore==0.0.24 (from albumentations)
+  Downloading albucore-0.0.24-py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: opencv-python-headless>=4.9.0.80 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from albumentations) (4.10.0)
+Collecting stringzilla>=3.10.4 (from albucore==0.0.24->albumentations)
+  Downloading stringzilla-3.12.5-cp311-cp311-win_amd64.whl.metadata (81 kB)
+Collecting simsimd>=5.9.2 (from albucore==0.0.24->albumentations)
+  Downloading simsimd-6.5.0-cp311-cp311-win_amd64.whl.metadata (72 kB)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (4.55.3)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (3.2.0)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from matplotlib>=3.3.0->ultralytics) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from pandas>=1.1.4->ultralytics) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from pandas>=1.1.4->ultralytics) (2025.2)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.9.2->albumentations)
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.2 (from pydantic>=2.9.2->albumentations)
+  Downloading pydantic_core-2.33.2-cp311-cp311-win_amd64.whl.metadata (6.9 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic>=2.9.2->albumentations)
+  Downloading typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: six>=1.5 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics) (1.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from requests->transformers) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from requests->transformers) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from requests->transformers) (2025.7.14)
+Collecting sympy==1.13.1 (from torch>=1.8.0->ultralytics)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: networkx in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from torch>=1.8.0->ultralytics) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from torch>=1.8.0->ultralytics) (3.1.6)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from sympy==1.13.1->torch>=1.8.0->ultralytics) (1.3.0)
+Collecting colorama (from tqdm>=4.27->transformers)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from jinja2->torch>=1.8.0->ultralytics) (3.0.2)
+Downloading transformers-4.53.2-py3-none-any.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 10.6 MB/s eta 0:00:00
+Downloading huggingface_hub-0.33.4-py3-none-any.whl (515 kB)
+Downloading tokenizers-0.21.2-cp39-abi3-win_amd64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 11.0 MB/s eta 0:00:00
+Downloading ultralytics-8.3.168-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 9.9 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.1-cp311-cp311-win_amd64.whl (8.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 10.6 MB/s eta 0:00:00
+Downloading albumentations-2.0.8-py3-none-any.whl (369 kB)
+Downloading albucore-0.0.24-py3-none-any.whl (15 kB)
+Downloading fsspec-2025.7.0-py3-none-any.whl (199 kB)
+Downloading joblib-1.5.1-py3-none-any.whl (307 kB)
+Downloading pydantic-2.11.7-py3-none-any.whl (444 kB)
+Downloading pydantic_core-2.33.2-cp311-cp311-win_amd64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 12.0 MB/s eta 0:00:00
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading regex-2024.11.6-cp311-cp311-win_amd64.whl (274 kB)
+Downloading safetensors-0.5.3-cp38-abi3-win_amd64.whl (308 kB)
+Downloading scipy-1.16.0-cp311-cp311-win_amd64.whl (38.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.6/38.6 MB 10.8 MB/s eta 0:00:00
+Downloading simsimd-6.5.0-cp311-cp311-win_amd64.whl (94 kB)
+Downloading stringzilla-3.12.5-cp311-cp311-win_amd64.whl (80 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 10.0 MB/s eta 0:00:00
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Downloading typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+Downloading ultralytics_thop-2.0.14-py3-none-any.whl (26 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading psutil-7.0.0-cp37-abi3-win_amd64.whl (244 kB)
+Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Installing collected packages: stringzilla, simsimd, py-cpuinfo, typing-inspection, threadpoolctl, sympy, scipy, safetensors, regex, pydantic-core, psutil, joblib, fsspec, colorama, annotated-types, albucore, tqdm, scikit-learn, pydantic, ultralytics-thop, huggingface-hub, albumentations, ultralytics, tokenizers, transformers
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.13.3
+    Uninstalling sympy-1.13.3:
+      Successfully uninstalled sympy-1.13.3
+Successfully installed albucore-0.0.24 albumentations-2.0.8 annotated-types-0.7.0 colorama-0.4.6 fsspec-2025.7.0 huggingface-hub-0.33.4 joblib-1.5.1 psutil-7.0.0 py-cpuinfo-9.0.0 pydantic-2.11.7 pydantic-core-2.33.2 regex-2024.11.6 safetensors-0.5.3 scikit-learn-1.7.1 scipy-1.16.0 simsimd-6.5.0 stringzilla-3.12.5 sympy-1.13.1 threadpoolctl-3.6.0 tokenizers-0.21.2 tqdm-4.67.1 transformers-4.53.2 typing-inspection-0.4.1 ultralytics-8.3.168 ultralytics-thop-2.0.14
+
+(vitfer_cpu) C:\Users\ASUS>python -c "import torch, torchvision, transformers, ultralytics, cv2, albumentations, sklearn, numpy, pandas, matplotlib; print('All packages installed')"
+Creating new Ultralytics Settings v0.0.6 file
+View Ultralytics Settings with 'yolo settings' or at 'C:\Users\ASUS\AppData\Roaming\Ultralytics\settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+All packages installed
+
+(vitfer_cpu) C:\Users\ASUS>conda deactivate
+
+(base) C:\Users\ASUS>conda activate vitfer_cpu
+
+(vitfer_cpu) C:\Users\ASUS>conda install jupyter
+3 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\ASUS\miniconda3\envs\vitfer_cpu
+
+  added / updated specs:
+    - jupyter
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    anyio-4.7.0                |  py311haa95532_0         262 KB
+    argon2-cffi-21.3.0         |     pyhd3eb1b0_0          15 KB
+    argon2-cffi-bindings-21.2.0|  py311h827c3e9_1          41 KB
+    asttokens-3.0.0            |  py311haa95532_0          49 KB
+    async-lru-2.0.4            |  py311haa95532_0          21 KB
+    attrs-24.3.0               |  py311haa95532_0         176 KB
+    babel-2.16.0               |  py311haa95532_0         6.9 MB
+    beautifulsoup4-4.13.4      |  py311haa95532_0         354 KB
+    bleach-6.2.0               |  py311haa95532_0         367 KB
+    colorama-0.4.6             |  py311haa95532_0          36 KB
+    comm-0.2.1                 |  py311haa95532_0          17 KB
+    debugpy-1.8.11             |  py311h5da7b33_0         3.7 MB
+    decorator-5.1.1            |     pyhd3eb1b0_0          12 KB
+    defusedxml-0.7.1           |     pyhd3eb1b0_0          23 KB
+    executing-0.8.3            |     pyhd3eb1b0_0          18 KB
+    h11-0.16.0                 |  py311haa95532_0          65 KB
+    httpcore-1.0.9             |  py311haa95532_0         123 KB
+    httpx-0.28.1               |  py311haa95532_0         251 KB
+    ipykernel-6.29.5           |  py311haa95532_1         259 KB
+    ipython-9.1.0              |  py311haa95532_0         1.2 MB
+    ipython_pygments_lexers-1.1.1|  py311haa95532_0          19 KB
+    ipywidgets-8.1.5           |  py311haa95532_0         259 KB
+    jedi-0.19.2                |  py311haa95532_0         1.2 MB
+    json5-0.9.25               |  py311haa95532_0          82 KB
+    jsonschema-4.23.0          |  py311haa95532_0         229 KB
+    jsonschema-specifications-2023.7.1|  py311haa95532_0          16 KB
+    jupyter-1.1.1              |  py311haa95532_0           9 KB
+    jupyter-lsp-2.2.5          |  py311haa95532_0         115 KB
+    jupyter_client-8.6.3       |  py311haa95532_0         262 KB
+    jupyter_console-6.6.3      |  py311haa95532_0          76 KB
+    jupyter_core-5.8.1         |  py311haa95532_0         129 KB
+    jupyter_events-0.12.0      |  py311haa95532_0          69 KB
+    jupyter_server-2.16.0      |  py311haa95532_0         637 KB
+    jupyter_server_terminals-0.5.3|  py311haa95532_0          29 KB
+    jupyterlab-4.4.4           |  py311haa95532_0         5.6 MB
+    jupyterlab_pygments-0.3.0  |  py311haa95532_0          20 KB
+    jupyterlab_server-2.27.3   |  py311haa95532_0         114 KB
+    jupyterlab_widgets-3.0.15  |  py311haa95532_0         199 KB
+    libsodium-1.0.18           |       h62dcd97_0         477 KB
+    matplotlib-inline-0.1.6    |  py311haa95532_0          19 KB
+    mistune-3.1.2              |  py311haa95532_0         151 KB
+    nbclient-0.10.2            |  py311haa95532_0          83 KB
+    nbconvert-7.16.6           |  py311haa95532_0           9 KB
+    nbconvert-core-7.16.6      |  py311haa95532_0         549 KB
+    nbconvert-pandoc-7.16.6    |  py311haa95532_0           9 KB
+    nbformat-5.10.4            |  py311haa95532_0         189 KB
+    nest-asyncio-1.6.0         |  py311haa95532_0          17 KB
+    notebook-7.4.4             |  py311haa95532_0        11.0 MB
+    notebook-shim-0.2.4        |  py311haa95532_0          27 KB
+    overrides-7.4.0            |  py311haa95532_0          38 KB
+    pandoc-2.12                |       haa95532_3        14.6 MB
+    pandocfilters-1.5.0        |     pyhd3eb1b0_0          11 KB
+    parso-0.8.4                |  py311haa95532_0         245 KB
+    platformdirs-4.3.7         |  py311haa95532_0          42 KB
+    prometheus_client-0.21.1   |  py311haa95532_0         154 KB
+    prompt-toolkit-3.0.43      |  py311haa95532_0         746 KB
+    prompt_toolkit-3.0.43      |       hd3eb1b0_0           5 KB
+    psutil-5.9.0               |  py311h827c3e9_1         525 KB
+    pure_eval-0.2.2            |     pyhd3eb1b0_0          14 KB
+    pygments-2.19.1            |  py311haa95532_0         2.2 MB
+    python-fastjsonschema-2.20.0|  py311haa95532_0         263 KB
+    python-json-logger-3.2.1   |  py311haa95532_0          29 KB
+    pywin32-308                |  py311h5da7b33_0        10.9 MB
+    pywinpty-2.0.15            |  py311h72d21ff_0         234 KB
+    pyzmq-26.2.0               |  py311h5da7b33_0         389 KB
+    qtconsole-5.6.1            |  py311haa95532_1         300 KB
+    qtpy-2.4.1                 |  py311haa95532_0         148 KB
+    referencing-0.30.2         |  py311haa95532_0          78 KB
+    rfc3339-validator-0.1.4    |  py311haa95532_0          10 KB
+    rfc3986-validator-0.1.1    |  py311haa95532_0          10 KB
+    rpds-py-0.22.3             |  py311h636fa0f_0         249 KB
+    send2trash-1.8.2           |  py311haa95532_1          98 KB
+    sniffio-1.3.0              |  py311haa95532_0          18 KB
+    soupsieve-2.5              |  py311haa95532_0          93 KB
+    stack_data-0.2.0           |     pyhd3eb1b0_0          22 KB
+    terminado-0.17.1           |  py311haa95532_0          38 KB
+    tinycss2-1.4.0             |  py311haa95532_0         114 KB
+    traitlets-5.14.3           |  py311haa95532_0         226 KB
+    typing-extensions-4.12.2   |  py311haa95532_0          10 KB
+    wcwidth-0.2.13             |  py311haa95532_0          74 KB
+    webencodings-0.5.1         |  py311haa95532_1          25 KB
+    websocket-client-1.8.0     |  py311haa95532_0         147 KB
+    widgetsnbextension-4.0.13  |  py311haa95532_0         949 KB
+    winpty-0.4.3               |                4         678 KB
+    zeromq-4.3.5               |       hd77b12b_0         5.2 MB
+    ------------------------------------------------------------
+                                           Total:        74.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  anyio              pkgs/main/win-64::anyio-4.7.0-py311haa95532_0
+  argon2-cffi        pkgs/main/noarch::argon2-cffi-21.3.0-pyhd3eb1b0_0
+  argon2-cffi-bindi~ pkgs/main/win-64::argon2-cffi-bindings-21.2.0-py311h827c3e9_1
+  asttokens          pkgs/main/win-64::asttokens-3.0.0-py311haa95532_0
+  async-lru          pkgs/main/win-64::async-lru-2.0.4-py311haa95532_0
+  attrs              pkgs/main/win-64::attrs-24.3.0-py311haa95532_0
+  babel              pkgs/main/win-64::babel-2.16.0-py311haa95532_0
+  beautifulsoup4     pkgs/main/win-64::beautifulsoup4-4.13.4-py311haa95532_0
+  bleach             pkgs/main/win-64::bleach-6.2.0-py311haa95532_0
+  colorama           pkgs/main/win-64::colorama-0.4.6-py311haa95532_0
+  comm               pkgs/main/win-64::comm-0.2.1-py311haa95532_0
+  debugpy            pkgs/main/win-64::debugpy-1.8.11-py311h5da7b33_0
+  decorator          pkgs/main/noarch::decorator-5.1.1-pyhd3eb1b0_0
+  defusedxml         pkgs/main/noarch::defusedxml-0.7.1-pyhd3eb1b0_0
+  executing          pkgs/main/noarch::executing-0.8.3-pyhd3eb1b0_0
+  h11                pkgs/main/win-64::h11-0.16.0-py311haa95532_0
+  httpcore           pkgs/main/win-64::httpcore-1.0.9-py311haa95532_0
+  httpx              pkgs/main/win-64::httpx-0.28.1-py311haa95532_0
+  ipykernel          pkgs/main/win-64::ipykernel-6.29.5-py311haa95532_1
+  ipython            pkgs/main/win-64::ipython-9.1.0-py311haa95532_0
+  ipython_pygments_~ pkgs/main/win-64::ipython_pygments_lexers-1.1.1-py311haa95532_0
+  ipywidgets         pkgs/main/win-64::ipywidgets-8.1.5-py311haa95532_0
+  jedi               pkgs/main/win-64::jedi-0.19.2-py311haa95532_0
+  json5              pkgs/main/win-64::json5-0.9.25-py311haa95532_0
+  jsonschema         pkgs/main/win-64::jsonschema-4.23.0-py311haa95532_0
+  jsonschema-specif~ pkgs/main/win-64::jsonschema-specifications-2023.7.1-py311haa95532_0
+  jupyter            pkgs/main/win-64::jupyter-1.1.1-py311haa95532_0
+  jupyter-lsp        pkgs/main/win-64::jupyter-lsp-2.2.5-py311haa95532_0
+  jupyter_client     pkgs/main/win-64::jupyter_client-8.6.3-py311haa95532_0
+  jupyter_console    pkgs/main/win-64::jupyter_console-6.6.3-py311haa95532_0
+  jupyter_core       pkgs/main/win-64::jupyter_core-5.8.1-py311haa95532_0
+  jupyter_events     pkgs/main/win-64::jupyter_events-0.12.0-py311haa95532_0
+  jupyter_server     pkgs/main/win-64::jupyter_server-2.16.0-py311haa95532_0
+  jupyter_server_te~ pkgs/main/win-64::jupyter_server_terminals-0.5.3-py311haa95532_0
+  jupyterlab         pkgs/main/win-64::jupyterlab-4.4.4-py311haa95532_0
+  jupyterlab_pygmen~ pkgs/main/win-64::jupyterlab_pygments-0.3.0-py311haa95532_0
+  jupyterlab_server  pkgs/main/win-64::jupyterlab_server-2.27.3-py311haa95532_0
+  jupyterlab_widgets pkgs/main/win-64::jupyterlab_widgets-3.0.15-py311haa95532_0
+  libsodium          pkgs/main/win-64::libsodium-1.0.18-h62dcd97_0
+  matplotlib-inline  pkgs/main/win-64::matplotlib-inline-0.1.6-py311haa95532_0
+  mistune            pkgs/main/win-64::mistune-3.1.2-py311haa95532_0
+  nbclient           pkgs/main/win-64::nbclient-0.10.2-py311haa95532_0
+  nbconvert          pkgs/main/win-64::nbconvert-7.16.6-py311haa95532_0
+  nbconvert-core     pkgs/main/win-64::nbconvert-core-7.16.6-py311haa95532_0
+  nbconvert-pandoc   pkgs/main/win-64::nbconvert-pandoc-7.16.6-py311haa95532_0
+  nbformat           pkgs/main/win-64::nbformat-5.10.4-py311haa95532_0
+  nest-asyncio       pkgs/main/win-64::nest-asyncio-1.6.0-py311haa95532_0
+  notebook           pkgs/main/win-64::notebook-7.4.4-py311haa95532_0
+  notebook-shim      pkgs/main/win-64::notebook-shim-0.2.4-py311haa95532_0
+  overrides          pkgs/main/win-64::overrides-7.4.0-py311haa95532_0
+  pandoc             pkgs/main/win-64::pandoc-2.12-haa95532_3
+  pandocfilters      pkgs/main/noarch::pandocfilters-1.5.0-pyhd3eb1b0_0
+  parso              pkgs/main/win-64::parso-0.8.4-py311haa95532_0
+  platformdirs       pkgs/main/win-64::platformdirs-4.3.7-py311haa95532_0
+  prometheus_client  pkgs/main/win-64::prometheus_client-0.21.1-py311haa95532_0
+  prompt-toolkit     pkgs/main/win-64::prompt-toolkit-3.0.43-py311haa95532_0
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.43-hd3eb1b0_0
+  psutil             pkgs/main/win-64::psutil-5.9.0-py311h827c3e9_1
+  pure_eval          pkgs/main/noarch::pure_eval-0.2.2-pyhd3eb1b0_0
+  pygments           pkgs/main/win-64::pygments-2.19.1-py311haa95532_0
+  python-fastjsonsc~ pkgs/main/win-64::python-fastjsonschema-2.20.0-py311haa95532_0
+  python-json-logger pkgs/main/win-64::python-json-logger-3.2.1-py311haa95532_0
+  pywin32            pkgs/main/win-64::pywin32-308-py311h5da7b33_0
+  pywinpty           pkgs/main/win-64::pywinpty-2.0.15-py311h72d21ff_0
+  pyzmq              pkgs/main/win-64::pyzmq-26.2.0-py311h5da7b33_0
+  qtconsole          pkgs/main/win-64::qtconsole-5.6.1-py311haa95532_1
+  qtpy               pkgs/main/win-64::qtpy-2.4.1-py311haa95532_0
+  referencing        pkgs/main/win-64::referencing-0.30.2-py311haa95532_0
+  rfc3339-validator  pkgs/main/win-64::rfc3339-validator-0.1.4-py311haa95532_0
+  rfc3986-validator  pkgs/main/win-64::rfc3986-validator-0.1.1-py311haa95532_0
+  rpds-py            pkgs/main/win-64::rpds-py-0.22.3-py311h636fa0f_0
+  send2trash         pkgs/main/win-64::send2trash-1.8.2-py311haa95532_1
+  sniffio            pkgs/main/win-64::sniffio-1.3.0-py311haa95532_0
+  soupsieve          pkgs/main/win-64::soupsieve-2.5-py311haa95532_0
+  stack_data         pkgs/main/noarch::stack_data-0.2.0-pyhd3eb1b0_0
+  terminado          pkgs/main/win-64::terminado-0.17.1-py311haa95532_0
+  tinycss2           pkgs/main/win-64::tinycss2-1.4.0-py311haa95532_0
+  traitlets          pkgs/main/win-64::traitlets-5.14.3-py311haa95532_0
+  typing-extensions  pkgs/main/win-64::typing-extensions-4.12.2-py311haa95532_0
+  wcwidth            pkgs/main/win-64::wcwidth-0.2.13-py311haa95532_0
+  webencodings       pkgs/main/win-64::webencodings-0.5.1-py311haa95532_1
+  websocket-client   pkgs/main/win-64::websocket-client-1.8.0-py311haa95532_0
+  widgetsnbextension pkgs/main/win-64::widgetsnbextension-4.0.13-py311haa95532_0
+  winpty             pkgs/main/win-64::winpty-0.4.3-4
+  zeromq             pkgs/main/win-64::zeromq-4.3.5-hd77b12b_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(vitfer_cpu) C:\Users\ASUS>pip install ipykernel
+Requirement already satisfied: ipykernel in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (6.29.5)
+Requirement already satisfied: comm>=0.1.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (0.2.1)
+Requirement already satisfied: debugpy>=1.6.5 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (1.8.11)
+Requirement already satisfied: ipython>=7.23.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (9.1.0)
+Requirement already satisfied: jupyter-client>=6.1.12 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (8.6.3)
+Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (5.8.1)
+Requirement already satisfied: matplotlib-inline>=0.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (0.1.6)
+Requirement already satisfied: nest-asyncio in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (1.6.0)
+Requirement already satisfied: packaging in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (24.2)
+Requirement already satisfied: psutil in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (5.9.0)
+Requirement already satisfied: pyzmq>=24 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (26.2.0)
+Requirement already satisfied: tornado>=6.1 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (6.5.1)
+Requirement already satisfied: traitlets>=5.4.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipykernel) (5.14.3)
+Requirement already satisfied: colorama in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (0.4.6)
+Requirement already satisfied: decorator in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (5.1.1)
+Requirement already satisfied: ipython-pygments-lexers in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (1.1.1)
+Requirement already satisfied: jedi>=0.16 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (0.19.2)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (3.0.43)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (2.19.1)
+Requirement already satisfied: stack_data in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (0.2.0)
+Requirement already satisfied: typing_extensions>=4.6 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from ipython>=7.23.1->ipykernel) (4.12.2)
+Requirement already satisfied: wcwidth in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel) (0.2.13)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel) (0.8.4)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from jupyter-client>=6.1.12->ipykernel) (2.9.0.post0)
+Requirement already satisfied: platformdirs>=2.5 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel) (4.3.7)
+Requirement already satisfied: pywin32>=300 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel) (308)
+Requirement already satisfied: six>=1.5 in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from python-dateutil>=2.8.2->jupyter-client>=6.1.12->ipykernel) (1.17.0)
+Requirement already satisfied: executing in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from stack_data->ipython>=7.23.1->ipykernel) (0.8.3)
+Requirement already satisfied: asttokens in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from stack_data->ipython>=7.23.1->ipykernel) (3.0.0)
+Requirement already satisfied: pure-eval in c:\users\asus\miniconda3\envs\vitfer_cpu\lib\site-packages (from stack_data->ipython>=7.23.1->ipykernel) (0.2.2)
+
+(vitfer_cpu) C:\Users\ASUS>conda deactivate
+
+(base) C:\Users\ASUS>
