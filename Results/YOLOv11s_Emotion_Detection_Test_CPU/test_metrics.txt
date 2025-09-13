@@ -1,0 +1,16 @@
+Test Metrics:
+mAP@50: 0.1603
+mAP@50:95: 0.1106
+
+Speed Metrics (per image):
+Preprocess: 0.5ms
+Inference: 65.3ms
+Postprocess: 0.4ms
+Total (Latency): 66.2ms
+FPS: 15.11
+
+Per Face Metrics:
+Average faces per image: 35.55
+Inference time per face: 1.836ms
+Latency per face: 1.862ms
+FPS per face: 544.80
